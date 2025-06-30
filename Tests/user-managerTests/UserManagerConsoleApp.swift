@@ -15,7 +15,7 @@ import filestore
 struct UserManagerConsoleApp {
     
     static let locatorUrl = "http://56.228.27.35:8080/api/v1"
-    static let path = FileManager.default.homeDirectoryForCurrentUser.appendingPathComponent("UserData")
+    static let path = FileManager.default.currentDirectoryPath
     
     static func getDevice() -> Device {
         return Device(serialNumber: UUID().uuidString, name: "MacBook", os: "macOS", fingerPrint: UUID().uuidString, deviceType: .desktop)
@@ -24,7 +24,7 @@ struct UserManagerConsoleApp {
     
     static func getUserManager() async throws -> UserManager {
         let authConfig = AuthConfig(app: .SOCIAL, device: getDevice(), locatorUrl: locatorUrl, env: .development)
-        return try await UserManagerImpl(path: path, authConfig: authConfig)
+        return try await UserManagerImpl(path: URL(filePath: path), authConfig: authConfig)
     }
     
     

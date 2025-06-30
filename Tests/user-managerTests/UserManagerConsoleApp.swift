@@ -7,7 +7,7 @@
 
 
 import Foundation
-//import user_manager
+import user_manager
 import filestore
 
 @main
@@ -126,4 +126,3 @@ struct UserManagerConsoleApp {
         print("URLs: \(urls)")
     }
 }
-

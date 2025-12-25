@@ -1,13 +1,12 @@
 {
-  "originHash" : "e14157cb3e172c996ef5ab4dad75e8511d07348089374fa540c87d2693377bd0",
   "pins" : [
     {
       "identity" : "rest-client-api",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/yuvraj-2503/rest-client-api",
       "state" : {
-        "revision" : "8c00286237c8aa32f13489193a9edf68af3fe287",
-        "version" : "1.0.0"
+        "revision" : "5439ab30204d07922ac3404205db2875194953fc",
+        "version" : "1.0.1"
       }
     },
     {
@@ -15,10 +14,10 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/yuvraj-2503/util-swift-sdk",
       "state" : {
-        "revision" : "d65b12d6ac2c278d48ca7221f1826a852a985147",
-        "version" : "1.0.2"
+        "revision" : "24e0781725ad97f2370816dd620d6d53a32ef10c",
+        "version" : "1.0.3"
       }
     }
   ],
-  "version" : 3
+  "version" : 2
 }

@@ -26,6 +26,7 @@ public final class URLManager {
     public func getUrl() async throws -> [String: String] {
         if blockManager.exists(resourceId: Self.fileName) {
             do {
+                await sync()
                 return try getFile().read()
             } catch {
                 try blockManager.delete(resourceId: Self.fileName)

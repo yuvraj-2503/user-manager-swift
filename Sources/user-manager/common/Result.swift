@@ -8,5 +8,10 @@
 public struct Result: Codable {
     let code: String
     let message: String
+    
+    public init(code: String, message: String) {
+        self.code = code
+        self.message = message
+    }
 }
 

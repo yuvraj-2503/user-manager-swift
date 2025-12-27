@@ -13,5 +13,6 @@ public struct Result: Codable {
         self.code = code
         self.message = message
     }
+    
 }
 
